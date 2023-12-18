@@ -24,7 +24,7 @@ let scores = {
     const result = document.getElementById('result').value;
   
     if (!name || !gameType || !result) {
-      alert('Please fill in all fields');
+      alert('ERROR:\nBITTE FÜLLE ALLE FELDER AUS');
       return;
     }
   
@@ -74,4 +74,28 @@ let scores = {
       scoreList.appendChild(listItem);
     });
   }
-  
+
+  document.addEventListener('DOMContentLoaded', function() {
+    const navbarLinks = document.querySelectorAll('.navbar a');
+
+    navbarLinks.forEach(link => {
+        link.addEventListener('click', function(event) {
+            event.preventDefault();
+
+            const targetId = this.getAttribute('href').substring(1);
+            const targetElement = document.getElementById(targetId);
+
+            if (targetElement) {
+                scrollToElement(targetElement);
+            }
+        });
+    });
+});
+
+function scrollToElement(element) {
+    window.scroll({
+        behavior: 'smooth',
+        left: 0,
+        top: element.offsetTop
+    });
+}

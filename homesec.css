@@ -4,3 +4,98 @@
     justify-content: center;
     display: flex;
 }
+
+.enter-texts h2 {
+    font-size: 50px;
+    color: rgba(255, 255, 255, 0.752);
+    margin: 0;
+}
+
+.enter-texts p {
+    margin-bottom: 60px;
+    font-size: 20px;
+    color: rgba(255, 255, 255, 0.752);
+}
+
+.enter-texts {
+    align-items: center;
+    text-align: center;
+}
+
+.labelname label {
+    font-size: 24px;
+    color: rgba(255, 255, 255, 0.752);
+    padding-right: 7px;
+}
+
+.labelname input {
+    color: rgba(255, 255, 255, 0.752);
+    font-size: 15px;
+    padding: 3px 80px;
+    background-color: #272727;
+    border-radius: 5px;
+    margin-bottom: 25px;
+    border: none;
+}
+
+.labelgame {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 25px;
+}
+
+.labelgame label {
+    font-size: 24px;
+    color: rgba(255, 255, 255, 0.752);
+    margin-right: 10px;
+}
+
+.select-style select {
+    background-color: #272727;
+    font-size: 15px;
+    color: rgba(255, 255, 255, 0.752);
+    padding: 3px 138px; 
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+}
+
+.labelresult {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 60px;
+}
+
+.labelresult label {
+    font-size: 24px;
+    color: rgba(255, 255, 255, 0.752);
+    padding-right: 7px;
+}
+
+.select-style2 select {
+    background-color: #272727;
+    font-size: 15px;
+    color: rgba(255, 255, 255, 0.752);
+    padding: 3px 138px; 
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+}
+
+.buttonsubmit button {
+    padding: 12px 50px;
+    background-color: #272727;
+    border: none;
+    color: rgba(255, 255, 255, 0.752);
+    font-size: 20px;
+    font-weight: 600;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: padding 0.3s ease-in-out;
+}
+
+.buttonsubmit button:hover {
+    padding: 18px 56px;
+}

@@ -10,6 +10,7 @@
   <link rel="stylesheet" href="homesec.css">
   <link rel="stylesheet" href="resultsec.css">
   <link rel="stylesheet" href="navbar.css">
+  <link rel="stylesheet" href="resultlooser.css">
   <title>Senpro IT | Game-List</title>
 </head>
 <body>
@@ -17,50 +18,74 @@
         <ul class="navbar-container">
             <img class="senproimgnav" src="/images/senpro2.png"><a href="#"></a></img>
             <li><a href="/">Home</a></li>
-            <li><a href="#grafana">Grafana</a></li>
-            <li><a href="docs.html">Docs</a></li>
-            <li><a href="comments.html">Kommentare</a></li>
+            <li><a href="#Winner">Winnerlist</a></li>
+            <li><a href="#loser">Loserlist</a></li>
         </ul>
     </div>
     <section class="homesec">
         <div class="home-container">
             <div class="enter-texts">
-                <h2>Enter Results</h2>
-                <label for="name">Name:</label>
-                <input type="text" id="name">
-                <label for="gameType">Game Type:</label>
-                <select id="gameType">
-                <option value="billiard">Billiard</option>
-                <option value="dart">Dart</option>
-                </select>
-                <label for="result">Result:</label>
-                <select id="result">
-                <option value="win">Win</option>
-                <option value="lose">Lose</option>
-                </select>
-                <button id="submitBtn">Submit</button>
+                <h2>ERGEBNIS EINGEBEN!</h2>
+                <p>Hier ist dein Moment! Zeig, was du drauf hast, indem du deine Top-Ergebnisse einträgst.<br> Deine Leistung verdient es, hier festgehalten zu werden. Leg los und setz<br> ein beeindruckendes Statement in der Bestenliste!</p>
+                <div class="labelname">
+                    <label for="name">Name:</label>
+                    <input type="text" id="name">
+                </div>
+                <div class="labelgame">
+                    <label for="gameType">Spiel:</label>
+                    <div class="select-style">
+                        <select id="gameType">
+                            <option value="billiard">Billiard</option>
+                            <option value="dart">Dart</option>
+                        </select>
+                    </div>
+                </div>                
+                <div class="labelresult">
+                    <label for="result">Resultat:</label>
+                    <div class="select-style2">
+                        <select id="result"> 
+                            <option value="win">Win</option>
+                            <option value="lose">Lose</option>
+                        </select>
+                    </div> 
+                </div>
+                <div class="buttonsubmit">
+                    <button id="submitBtn">BESTÄTIGEN</button>  
+                </div>
             </div>
     </section>
-    <section class="resultsec">
-        <div class="scores-lists">
-            <h2>Top Scores</h2>
-            <div id="billiardWins">
-              <h3>Billiard Wins</h3>
-              <ul id="billiardWinsList"></ul>
+    <section id="Winner" class="resultsec">
+        <div class="result-container">
+            <div class="scores-lists">
+                <h2>TOP LISTE</h2>
+                <p>Hier findest du die Crème de la Crème, die absoluten Überflieger. Nur die Elite im Sport schafft<br> es an die Spitze dieser Rangliste. Sei authentisch, spiel nicht mit falschen Karten, und<br> trage deine Werte mit Stolz ganz oben ein!</p>
+                <div id="billiardWins">
+                  <h3>BILLIARD WINS</h3>
+                  <ul id="billiardWinsList"></ul>
+                </div>
+                <div id="dartWins">
+                  <h3>DART WINS</h3>
+                  <ul id="dartWinsList"></ul>
+                </div>
+            </div> 
+        </div>
+    </section>
+
+    <section id="loser" class="resultloosersec">
+        <div class="result-container">
+            <div class="scores-lists">
+                <h2>LOOSER LISTE</h2>
+                <p>Niederlagen sind Teil des Spiels, also steh dazu! Dies ist deine Chance, aus Rückschlägen<br> zu lernen und stärker zurückzukommen. Gib nicht auf, sondern trag deine<br> Ergebnisse ein und zeig, dass du bereit bist für das nächste Kapitel!</p>
+                <div id="billiardLosses">
+                    <h3>BILLIARD LOSSES</h3>
+                    <ul id="billiardLossesList"></ul>
+                  </div>
+                <div id="dartLosses">
+                    <h3>DART LOSSES</h3>
+                    <ul id="dartLossesList"></ul>
+                </div>
             </div>
-            <div id="billiardLosses">
-              <h3>Billiard Losses</h3>
-              <ul id="billiardLossesList"></ul>
-            </div>
-            <div id="dartWins">
-              <h3>Dart Wins</h3>
-              <ul id="dartWinsList"></ul>
-            </div>
-            <div id="dartLosses">
-              <h3>Dart Losses</h3>
-              <ul id="dartLossesList"></ul>
-            </div>
-        </div>  
+        </div>
     </section>
 
   <script src="main.js"></script>
