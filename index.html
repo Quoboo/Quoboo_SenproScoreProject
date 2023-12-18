@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;0,1000;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900;1,1000&family=Rubik:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="main.css">
+  <link rel="stylesheet" href="homesec.css">
+  <link rel="stylesheet" href="resultsec.css">
+  <link rel="stylesheet" href="navbar.css">
+  <title>Senpro IT | Game-List</title>
+</head>
+<body>
+    <div class="navbar">
+        <ul class="navbar-container">
+            <img class="senproimgnav" src="/images/senpro2.png"><a href="#"></a></img>
+            <li><a href="/">Home</a></li>
+            <li><a href="#grafana">Grafana</a></li>
+            <li><a href="docs.html">Docs</a></li>
+            <li><a href="comments.html">Kommentare</a></li>
+        </ul>
+    </div>
+    <section class="homesec">
+        <div class="home-container">
+            <div class="enter-texts">
+                <h2>Enter Results</h2>
+                <label for="name">Name:</label>
+                <input type="text" id="name">
+                <label for="gameType">Game Type:</label>
+                <select id="gameType">
+                <option value="billiard">Billiard</option>
+                <option value="dart">Dart</option>
+                </select>
+                <label for="result">Result:</label>
+                <select id="result">
+                <option value="win">Win</option>
+                <option value="lose">Lose</option>
+                </select>
+                <button id="submitBtn">Submit</button>
+            </div>
+    </section>
+    <section class="resultsec">
+        <div class="scores-lists">
+            <h2>Top Scores</h2>
+            <div id="billiardWins">
+              <h3>Billiard Wins</h3>
+              <ul id="billiardWinsList"></ul>
+            </div>
+            <div id="billiardLosses">
+              <h3>Billiard Losses</h3>
+              <ul id="billiardLossesList"></ul>
+            </div>
+            <div id="dartWins">
+              <h3>Dart Wins</h3>
+              <ul id="dartWinsList"></ul>
+            </div>
+            <div id="dartLosses">
+              <h3>Dart Losses</h3>
+              <ul id="dartLossesList"></ul>
+            </div>
+        </div>  
+    </section>
+
+  <script src="main.js"></script>
+
+</body>
+</html>
